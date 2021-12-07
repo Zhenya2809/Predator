@@ -6,7 +6,7 @@ public enum DayOfWeek {
     THURSDAY("ЧТ"),
     FRIDAY("ПТ"),
     SATURDAY("СБ"),
-    INDEFINITE_DAY("несуществующий день");
+    INDEFINITE_DAY("не определенный день");
 
     DayOfWeek(String title) {
 
