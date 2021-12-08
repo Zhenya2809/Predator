@@ -6,7 +6,7 @@ public class TestCats {
 
     @Test
     void shouldCreateCat() {
-        Cats murzik = new Cats("плямистый", 6.5, "Бенгальский");
+        Cat murzik = new Cat("плямистый", 6.5, "Бенгальский");
         String breed = murzik.getBreed();
         double weight = murzik.getWeight();
         String color = murzik.getColor();
@@ -17,10 +17,10 @@ public class TestCats {
 
     @Test
     void testEqualsCats() {
-        Cats murzik = new Cats("плямистый", 6.5, "Бенгальский");
-        Cats tuzik = new Cats("серый", 15.5, "Мейн-кун");
-        Cats barsik = new Cats("черный", 17.5, "Мейн-кун");
-        Cats vanya = new Cats("рыжий", 5.2, "Рєгдолл");
+        Cat murzik = new Cat("плямистый", 6.5, "Бенгальский");
+        Cat tuzik = new Cat("серый", 15.5, "Мейн-кун");
+        Cat barsik = new Cat("черный", 17.5, "Мейн-кун");
+        Cat vanya = new Cat("рыжий", 5.2, "Рєгдолл");
 
         //true
         Assertions.assertEquals(tuzik, barsik);
@@ -32,7 +32,7 @@ public class TestCats {
 
     @Test
     void testWhatCatDoing() {
-        Cats tuzik = new Cats("серый", 15.5, "Мейн-кун");
+        Cat tuzik = new Cat("серый", 15.5, "Мейн-кун");
 
         Assertions.assertEquals(tuzik.whatCatDoing(DayOfWeek.MONDAY), "сплю");
         Assertions.assertEquals(tuzik.whatCatDoing(DayOfWeek.WEDNESDAY), "сплю");

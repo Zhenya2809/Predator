@@ -1,7 +1,7 @@
 import java.util.Objects;
 
-public class Cats extends Predator {
-    public Cats(String color, double weight, String breed) {
+public class Cat extends Predator {
+    public Cat(String color, double weight, String breed) {
         super(color, weight);
         this.breed = breed;
     }
@@ -49,7 +49,7 @@ public class Cats extends Predator {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Cats cats = (Cats) o;
+        Cat cats = (Cat) o;
         return Objects.equals(breed, cats.breed);
     }
 

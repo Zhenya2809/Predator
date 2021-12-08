@@ -1,6 +1,6 @@
 public abstract class Predator {
-    String color;
-    double weight;
+    private final String color;
+    private final double weight;
 
     public Predator(String color, double weight) {
         this.color = color;
